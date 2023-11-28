@@ -85,4 +85,15 @@ public class Player : MonoBehaviour {
     public static void ReceiveKill() {
         kill_counter += 1; 
     }
+
+    public void Flip_Horizontal() {
+        Debug.Log("ButtonClick");
+        // joystick.joystickVec.x  by horizontal
+        /*if(is_facing_right && joystick.joystickVec.x < 0f || !is_facing_right && joystick.joystickVec.x > 0f) {
+            is_facing_right = !is_facing_right;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
+        }*/
+    }
 }
